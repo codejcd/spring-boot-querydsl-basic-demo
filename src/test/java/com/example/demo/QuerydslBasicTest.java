@@ -14,6 +14,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Commit;
+import org.springframework.test.context.ActiveProfiles;
 import com.example.demo.dto.MemberDto;
 import com.example.demo.dto.QMemberDto;
 import com.example.demo.dto.UserDto;
@@ -36,6 +37,7 @@ import static com.example.demo.entity.QTeam.*;
 
 @SpringBootTest
 @Transactional
+@ActiveProfiles("test")
 public class QuerydslBasicTest {
 
     @Autowired
